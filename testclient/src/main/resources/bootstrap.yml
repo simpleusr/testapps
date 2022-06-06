@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: testClient
+  profiles:
+    active: common,dev
+  cloud:
+    config:
+      uri: http://localhost:10000
+      username: user
+      password: pwd
+      label: master
+      failfast: true
+encrypt:
+  key: changeit
